@@ -1,0 +1,7 @@
+c:\users\chris\documents\visual studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.ESI.dll
+c:\users\chris\documents\visual studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.ESI.pdb
+c:\users\chris\documents\visual studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Newtonsoft.Json.dll
+c:\users\chris\documents\visual studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Newtonsoft.Json.xml
+c:\users\chris\documents\visual studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csprojResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.dll
+c:\users\chris\documents\visual studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.pdb
