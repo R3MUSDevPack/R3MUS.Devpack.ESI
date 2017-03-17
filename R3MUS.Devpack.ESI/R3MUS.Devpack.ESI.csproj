@@ -48,10 +48,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Corporation\Detail.cs" />
+    <Compile Include="Extensions\AllianceExt.cs" />
+    <Compile Include="Extensions\CorporationExt.cs" />
     <Compile Include="Infrastructure\Constants.cs" />
+    <Compile Include="Models\Alliance\Detail.cs" />
+    <Compile Include="Models\Alliance\Summary.cs" />
+    <Compile Include="Models\Alliance\AllianceIcons.cs" />
+    <Compile Include="Models\Alliance\AllianceNames.cs" />
+    <Compile Include="Models\Alliance\Alliances.cs" />
+    <Compile Include="Models\Shared\Icons.cs" />
     <Compile Include="Models\Constellation.cs" />
+    <Compile Include="Models\Corporation\Detail.cs" />
+    <Compile Include="Models\IgnoreDataMemberAttribute.cs" />
     <Compile Include="Models\ItemType.cs" />
     <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\Corporation\Summary.cs" />
     <Compile Include="Models\SolarSystem.cs" />
     <Compile Include="Models\War.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,9 +71,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Extensions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

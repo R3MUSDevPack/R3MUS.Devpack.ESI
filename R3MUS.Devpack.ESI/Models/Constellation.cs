@@ -4,7 +4,7 @@ namespace R3MUS.Devpack.ESI.Models
 {
     public class Constellation
     {
-        [JsonProperty(PropertyName = = "constellation_id")]
+        [JsonProperty(PropertyName = "constellation_id")]
         public long Id { get; set; }
 
         [JsonProperty(PropertyName = "name")]
