@@ -38,5 +38,13 @@ namespace R3MUS.Devpack.ESI.Extensions
             var obj = (Alliance)Web.BaseRequest(reqUri).Deserialize(typeof(Alliance));
             me.SetProperties(obj);
         }
+
+        public static void GetAllianceIcons(this Alliance me)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}", Constants.BaseURI, Constants.Alliances, me.Id.ToString(), Constants.BaseURITail);
+
+            var obj = (AllianceIcons)Web.BaseRequest(reqUri).Deserialize(typeof(AllianceIcons));
+            me.Icons = obj;
+        }
     }
 }

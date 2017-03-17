@@ -21,5 +21,6 @@ namespace R3MUS.Devpack.ESI.Infrastructure
         public static string Corporations = "corporations";
         public static string Alliances = "alliances";
         public static string Names = "names";
+        public static string Icons = "icons";
     }
 }

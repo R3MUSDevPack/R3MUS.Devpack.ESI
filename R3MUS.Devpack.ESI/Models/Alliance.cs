@@ -10,6 +10,8 @@ namespace R3MUS.Devpack.ESI.Models
         private List<long> _corporationIds;
         private List<Corporation> _corps = new List<Corporation>();
 
+        private AllianceIcons _icons;
+
         public long Id { get; set; }
 
         [JsonProperty(PropertyName = "alliance_name")]
@@ -31,6 +33,20 @@ namespace R3MUS.Devpack.ESI.Models
             {
                 if (_corporationIds == null) { _corporationIds = this.GetCorporationIds().CorpIds; }
                 return _corporationIds;
+            }
+        }
+
+        [IgnoreDataMember]
+        public virtual AllianceIcons Icons
+        {
+            get
+            {
+                if (_icons == null) { this.GetAllianceIcons(); }
+                return _icons;
+            }
+            set
+            {
+                _icons = value;
             }
         }
 
@@ -68,7 +84,7 @@ namespace R3MUS.Devpack.ESI.Models
     public class AllianceIcons
     {
         [JsonProperty(PropertyName = "applicationjson")]
-        public Icon Data { get; set; }
+        public Icon Icons { get; set; }
     }
 
     public class Icon
