@@ -35,7 +35,7 @@ namespace R3MUS.Devpack.ESI.Models
         public SolarSystem(long id)
         {
             Id = id;
-            this.GetSolarSystem();
+            //this.GetSolarSystem();
             Constellation = new Constellation(Constellation_Id);
         }
     }

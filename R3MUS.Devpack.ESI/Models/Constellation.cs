@@ -29,7 +29,7 @@ namespace R3MUS.Devpack.ESI.Models
         public Constellation(long id)
         {
             Id = id;
-            this.GetConstellation();
+            //this.GetConstellation();
             Region = new Region(Region_Id);
         }
     }

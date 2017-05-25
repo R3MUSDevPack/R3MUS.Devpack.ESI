@@ -78,7 +78,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AllianceTests\AllianceExtTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.csproj">

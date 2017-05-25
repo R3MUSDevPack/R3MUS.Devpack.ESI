@@ -21,3 +21,4 @@ C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Dev
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\FluentAssertions.xml
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\FluentAssertions.Core.pdb
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\FluentAssertions.Core.xml
+C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\R3MUS.Devpack.Core.dll

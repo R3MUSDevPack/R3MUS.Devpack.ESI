@@ -50,7 +50,7 @@ namespace R3MUS.Devpack.ESI.Models
         public ItemType(long id)
         {
             Id = id;
-            this.GetItemType();
+            //this.GetItemType();
         }
     }
 

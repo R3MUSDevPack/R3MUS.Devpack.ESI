@@ -32,7 +32,7 @@ namespace R3MUS.Devpack.ESI.Models.Alliance
         {
             get
             {
-                if (_corporationIds == null) { this.GetCorporationIds(); }
+                if ((_corporationIds == null) || (this.CorporationIds.Count == 0)) { this.GetCorporationIds(); }
                 return _corporationIds;
             }
             set

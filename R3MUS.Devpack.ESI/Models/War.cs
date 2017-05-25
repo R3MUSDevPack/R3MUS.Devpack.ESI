@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using R3MUS.Devpack.ESI.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,9 +30,12 @@ namespace R3MUS.Devpack.ESI.Models
         [JsonProperty(PropertyName = "started")]
         public DateTime StartTime { get; set; }
 
+        [JsonProperty(PropertyName = "finished")]
+        public DateTime? EndTime { get; set; }
+
         public War()
         {
-
+        
         }
         public War(long id)
         {
@@ -39,9 +43,9 @@ namespace R3MUS.Devpack.ESI.Models
             this.GetWar();
         }
         
-        public static List<long> GetWars(long? lastWarId = null)
+        public static List<long> GetWarIds(long? lastWarId = null)
         {
-            return ESI.GetWars().WarIds.Where(warId => (lastWarId == null) || (warId > lastWarId)).ToList();
+            return WarExt.GetWars().WarIds.Where(warId => (lastWarId == null) || (warId > lastWarId)).ToList();
         }
     }
 

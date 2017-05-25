@@ -9,7 +9,7 @@ namespace R3MUS.Devpack.ESI.Infrastructure
     static class Constants
     { 
         public static string BaseURI = "https://esi.tech.ccp.is/latest";
-        public static string BaseURITail = "?datasource=tranquility";
+        public static string BaseURITail = "datasource=tranquility";
         public static string BaseTailExtra = "&language=en-us";
 
         public static string Universe = "universe";
@@ -22,5 +22,7 @@ namespace R3MUS.Devpack.ESI.Infrastructure
         public static string Alliances = "alliances";
         public static string Names = "names";
         public static string Icons = "icons";
+
+        public static string AllianceIds = "alliance_ids";
     }
 }

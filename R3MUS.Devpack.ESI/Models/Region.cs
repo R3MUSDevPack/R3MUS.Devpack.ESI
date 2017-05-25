@@ -20,7 +20,7 @@ namespace R3MUS.Devpack.ESI.Models
         public Region (long id)
         {
             Id = id;
-            this.GetRegion();
+            //this.GetRegion();
         }
     }
 }
