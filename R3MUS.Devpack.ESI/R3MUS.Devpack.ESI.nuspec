@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>R3MUS.DevPack.ESI</id>
-    <version>$version$</version>
+    <version>1.0.2</version>
     <title>$title$</title>
     <authors>Clyde en Marland</authors>
     <owners>R3MUS.DevPack</owners>
