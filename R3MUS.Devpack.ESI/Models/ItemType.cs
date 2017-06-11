@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using R3MUS.Devpack.ESI.Extensions;
 
 namespace R3MUS.Devpack.ESI.Models
 {
@@ -50,7 +51,7 @@ namespace R3MUS.Devpack.ESI.Models
         public ItemType(long id)
         {
             Id = id;
-            //this.GetItemType();
+            this.GetItemType();
         }
     }
 
