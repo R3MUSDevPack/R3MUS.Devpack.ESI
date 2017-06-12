@@ -4,21 +4,22 @@ using R3MUS.Devpack.Core;
 using System.Collections.Generic;
 using R3MUS.Devpack.ESI.Models.Alliance;
 using System.Net;
+using R3MUS.Devpack.ESI.Models.Shared;
 
 namespace R3MUS.Devpack.ESI.Extensions
 {
     public static class AllianceExt
     {
-        public static Alliances GetAlliances(this Detail me)
+        public static IdList GetAlliances(this Detail me)
         {
             var reqUri = string.Format("{0}/{1}/?{2}", Constants.BaseURI, Constants.Alliances, Constants.BaseURITail);
 
-            return new Alliances() { AllianceIds = (List<long>)Web.BaseRequest(reqUri).Deserialize(typeof(List<long>)) };
+            return new IdList() { Ids = (List<long>)Web.BaseRequest(reqUri).Deserialize(typeof(List<long>)) };
         }
 
-        public static AllianceNames GetAllianceNames(this Alliances me)
+        public static AllianceNames GetAllianceNames(this IdList me)
         {
-            var idStr = WebUtility.UrlEncode(string.Join(",", me.AllianceIds));
+            var idStr = WebUtility.UrlEncode(string.Join(",", me.Ids));
             var reqUri = string.Format("{0}/{1}/{2}/?{3}={4}&{5}", Constants.BaseURI, Constants.Alliances, Constants.Names,
                 Constants.AllianceIds, idStr, Constants.BaseURITail);
             return new AllianceNames() { AllianceDetail = (Summary[])Web.BaseRequest(reqUri).Deserialize(typeof(Summary[])) };

@@ -45,7 +45,7 @@ namespace R3MUS.Devpack.ESI.Models
         
         public static List<long> GetWarIds(long? lastWarId = null)
         {
-            return WarExt.GetWars().WarIds.Where(warId => (lastWarId == null) || (warId > lastWarId)).ToList();
+            return WarExt.GetWars().Ids.Where(warId => (lastWarId == null) || (warId > lastWarId)).ToList();
         }
     }
 
@@ -81,10 +81,5 @@ namespace R3MUS.Devpack.ESI.Models
         [OptionalField]
         [JsonProperty(PropertyName = "corporation_id")]
         public long? Corporation_Id;
-    }
-
-    public class Wars
-    {
-        public List<long> WarIds { get; set; }        
-    }
+    }    
 }

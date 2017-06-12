@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using R3MUS.Devpack.ESI.Extensions;
 
-namespace R3MUS.Devpack.ESI.Models
+namespace R3MUS.Devpack.ESI.Models.Universe
 {
     public class ItemType
     {

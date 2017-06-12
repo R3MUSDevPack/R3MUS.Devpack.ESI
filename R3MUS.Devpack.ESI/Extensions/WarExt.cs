@@ -1,17 +1,18 @@
 ﻿using R3MUS.Devpack.Core;
 using R3MUS.Devpack.ESI.Infrastructure;
 using R3MUS.Devpack.ESI.Models;
+using R3MUS.Devpack.ESI.Models.Shared;
 using System.Collections.Generic;
 
 namespace R3MUS.Devpack.ESI.Extensions
 {
     public static class WarExt
     {
-        public static Wars GetWars()
+        public static IdList GetWars()
         {
             var reqUri = string.Format("{0}/{1}/?{2}", Constants.BaseURI, Constants.Wars, Constants.BaseURITail);
 
-            return new Wars() { WarIds = (List<long>)Web.BaseRequest(reqUri).Deserialize(typeof(List<long>)) };
+            return new IdList() { Ids = (List<long>)Web.BaseRequest(reqUri).Deserialize(typeof(List<long>)) };
         }
         public static void GetWar(this War me)
         {

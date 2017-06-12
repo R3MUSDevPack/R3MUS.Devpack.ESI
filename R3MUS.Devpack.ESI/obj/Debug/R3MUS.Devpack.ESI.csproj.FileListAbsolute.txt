@@ -13,3 +13,4 @@ C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Newton
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csprojResolveAssemblyReference.cache
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.dll
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.pdb
+C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csprojResolveAssemblyReference.cache
