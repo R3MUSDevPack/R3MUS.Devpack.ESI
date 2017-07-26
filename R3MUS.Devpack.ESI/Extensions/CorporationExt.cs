@@ -1,6 +1,6 @@
 ﻿using R3MUS.Devpack.Core;
 using R3MUS.Devpack.ESI.Infrastructure;
-using R3MUS.Devpack.ESI.Models.Alliance;
+using R3MUS.Devpack.ESI.Models.Corporation;
 
 namespace R3MUS.Devpack.ESI.Extensions
 {

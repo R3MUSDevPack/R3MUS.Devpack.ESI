@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using R3MUS.Devpack.ESI.Extensions;
 using System;
 using System.Collections.Generic;
 
@@ -45,7 +46,7 @@ namespace R3MUS.Devpack.ESI.Models.Corporation
         public Detail(long id)
         {
             Id = id;
-            //this.GetCorporation();
+            this.GetCorporation();
         }
     }
 
