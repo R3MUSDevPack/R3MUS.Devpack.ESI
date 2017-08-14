@@ -7,6 +7,8 @@
 **.o
 **.so
 **.config
+**.pdb
+**.xml
 
 # Packages #
 ############
@@ -36,12 +38,3 @@
 **.Trashes
 **ehthumbs.db
 **Thumbs.db
-
-!R3MUS.Devpack.ESI/bin/Debug
-!R3MUS.Devpack.ESI/bin/Release
-!R3MUS.Devpack.ESI/obj/Debug
-!R3MUS.Devpack.ESI/obj/Release
-!R3MUS.Devpack.ESI.Tests/bin/Debug
-!R3MUS.Devpack.ESI.Tests/bin/Release
-!R3MUS.Devpack.ESI.Tests/obj/Debug
-!R3MUS.Devpack.ESI.Tests/obj/Release
