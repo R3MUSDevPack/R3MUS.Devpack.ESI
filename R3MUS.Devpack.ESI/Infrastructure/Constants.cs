@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace R3MUS.Devpack.ESI.Infrastructure
 {
-    static class Constants
+    public static class Constants
     { 
-        public static string BaseURI = "https://esi.tech.ccp.is/latest";
-        public static string BaseURITail = "datasource=tranquility";
-        public static string BaseTailExtra = "&language=en-us";
-
         public static string Universe = "universe";
         public static string Regions = "regions";
         public static string Constellations = "constellations";
@@ -24,5 +20,7 @@ namespace R3MUS.Devpack.ESI.Infrastructure
         public static string Icons = "icons";
 
         public static string AllianceIds = "alliance_ids";
+
+		public static string AuthorisationUrl = "https://login.eveonline.com/oauth/authorize";
     }
 }

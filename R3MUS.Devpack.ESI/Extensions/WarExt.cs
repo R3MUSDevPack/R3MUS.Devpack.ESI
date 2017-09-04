@@ -10,13 +10,13 @@ namespace R3MUS.Devpack.ESI.Extensions
     {
         public static IdList GetWars()
         {
-            var reqUri = string.Format("{0}/{1}/?{2}", Constants.BaseURI, Constants.Wars, Constants.BaseURITail);
+            var reqUri = string.Format("{0}/{1}/?{2}", Resources.BaseURI, Constants.Wars, Resources.BaseURITail);
 
             return new IdList() { Ids = (List<long>)Web.BaseRequest(reqUri).Deserialize(typeof(List<long>)) };
         }
         public static void GetWar(this War me)
         {
-            var reqUri = string.Format("{0}/{1}/{2}/?{3}", Constants.BaseURI, Constants.Wars, me.Id.ToString(), Constants.BaseURITail);
+            var reqUri = string.Format("{0}/{1}/{2}/?{3}", Resources.BaseURI, Constants.Wars, me.Id.ToString(), Resources.BaseURITail);
 
             var obj = (War)Web.BaseRequest(reqUri).Deserialize(typeof(War));
             me.SetProperties(obj);

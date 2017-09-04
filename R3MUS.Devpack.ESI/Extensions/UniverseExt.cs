@@ -10,14 +10,14 @@ namespace R3MUS.Devpack.ESI.Extensions
     {
         public static IdList GetAlliances(this ItemType me)
         {
-            var reqUri = string.Format("{0}/{1}/?{2}", Constants.BaseURI, Constants.Universe, Constants.Types, Constants.BaseURITail);
+            var reqUri = string.Format("{0}/{1}/?{2}", Resources.BaseURI, Constants.Universe, Constants.Types, Resources.BaseURITail);
 
             return new IdList() { Ids = (List<long>)Web.BaseRequest(reqUri).Deserialize(typeof(List<long>)) };
         }
 
         public static void GetItemType(this ItemType me)
         {
-            var reqUri = string.Format("{0}/{1}/{2}/{3}", Constants.BaseURI, Constants.Universe, Constants.Types, me.Id.ToString(), Constants.BaseURITail);
+            var reqUri = string.Format("{0}/{1}/{2}/{3}", Resources.BaseURI, Constants.Universe, Constants.Types, me.Id.ToString(), Resources.BaseURITail);
 
             var obj = (ItemType)Web.BaseRequest(reqUri).Deserialize(typeof(ItemType));
             me.SetProperties(obj);

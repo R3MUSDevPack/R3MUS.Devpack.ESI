@@ -12,7 +12,7 @@ namespace R3MUS.Devpack.ESI.Extensions
     {
         public static IdList GetAlliances(this Detail me)
         {
-            var reqUri = string.Format("{0}/{1}/?{2}", Constants.BaseURI, Constants.Alliances, Constants.BaseURITail);
+            var reqUri = string.Format("{0}/{1}/?{2}", Resources.BaseURI, Constants.Alliances, Resources.BaseURITail);
 
             return new IdList() { Ids = (List<long>)Web.BaseRequest(reqUri).Deserialize(typeof(List<long>)) };
         }
@@ -20,8 +20,8 @@ namespace R3MUS.Devpack.ESI.Extensions
         public static AllianceNames GetAllianceNames(this IdList me)
         {
             var idStr = WebUtility.UrlEncode(string.Join(",", me.Ids));
-            var reqUri = string.Format("{0}/{1}/{2}/?{3}={4}&{5}", Constants.BaseURI, Constants.Alliances, Constants.Names,
-                Constants.AllianceIds, idStr, Constants.BaseURITail);
+            var reqUri = string.Format("{0}/{1}/{2}/?{3}={4}&{5}", Resources.BaseURI, Constants.Alliances, Constants.Names,
+                Constants.AllianceIds, idStr, Resources.BaseURITail);
             return new AllianceNames() { AllianceDetail = (Summary[])Web.BaseRequest(reqUri).Deserialize(typeof(Summary[])) };
         }
 
@@ -29,8 +29,8 @@ namespace R3MUS.Devpack.ESI.Extensions
         {
             if (me.Id > 0)
             {
-                var reqUri = string.Format("{0}/{1}/{2}/{3}/{4}", Constants.BaseURI, Constants.Alliances, me.Id.ToString(),
-                    Constants.Corporations, Constants.BaseURITail);
+                var reqUri = string.Format("{0}/{1}/{2}/{3}/{4}", Resources.BaseURI, Constants.Alliances, me.Id.ToString(),
+                    Constants.Corporations, Resources.BaseURITail);
 
                 me.CorporationIds = (List<long>)Web.BaseRequest(reqUri).Deserialize(typeof(List<long>));
             }
@@ -42,7 +42,7 @@ namespace R3MUS.Devpack.ESI.Extensions
 
         public static void GetAlliance(this Detail me)
         {
-            var reqUri = string.Format("{0}/{1}/{2}/?{3}", Constants.BaseURI, Constants.Alliances, me.Id.ToString(), Constants.BaseURITail);
+            var reqUri = string.Format("{0}/{1}/{2}/?{3}", Resources.BaseURI, Constants.Alliances, me.Id.ToString(), Resources.BaseURITail);
 
             var obj = (Detail)Web.BaseRequest(reqUri).Deserialize(typeof(Detail));
             me.SetProperties(obj);
@@ -52,7 +52,7 @@ namespace R3MUS.Devpack.ESI.Extensions
         {
             if (me.Id > 0)
             {
-                var reqUri = string.Format("{0}/{1}/{2}/{3}", Constants.BaseURI, Constants.Alliances, me.Id.ToString(), Constants.BaseURITail);
+                var reqUri = string.Format("{0}/{1}/{2}/{3}", Resources.BaseURI, Constants.Alliances, me.Id.ToString(), Resources.BaseURITail);
 
                 var obj = (AllianceIcons)Web.BaseRequest(reqUri).Deserialize(typeof(AllianceIcons));
                 me.Icons = obj.Icons;
