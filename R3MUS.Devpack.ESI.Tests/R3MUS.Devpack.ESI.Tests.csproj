@@ -59,6 +59,10 @@
       <HintPath>..\packages\AutoFixture.3.16.4\lib\net40\Ploeh.AutoFixture.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="R3MUS.Devpack.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Source\Repos\R3MUS.Devpack.Core\R3MUS.Devpack.Core\bin\Debug\R3MUS.Devpack.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -80,8 +84,16 @@
   <ItemGroup>
     <Compile Include="AllianceTests\AllianceExtTests.cs" />
     <Compile Include="CorpTests\CorpExtTests.cs" />
+    <Compile Include="MailTests\SendMailTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="TestBase.cs" />
+    <Compile Include="UniverseTests\UniverseExtTests.cs" />
+    <Compile Include="WarTests\WarExtTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.csproj">
@@ -92,6 +104,10 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

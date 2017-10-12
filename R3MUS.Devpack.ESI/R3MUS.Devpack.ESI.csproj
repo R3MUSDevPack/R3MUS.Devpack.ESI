@@ -35,8 +35,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="R3MUS.Devpack.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\R3MUS.Devpack.Core.1.0.0\lib\net452\R3MUS.Devpack.Core.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Source\Repos\R3MUS.Devpack.Core\R3MUS.Devpack.Core\bin\Debug\R3MUS.Devpack.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -51,19 +51,24 @@
   <ItemGroup>
     <Compile Include="Extensions\AllianceExt.cs" />
     <Compile Include="Extensions\CorporationExt.cs" />
+    <Compile Include="Extensions\MailPostModelExt.cs" />
     <Compile Include="Extensions\UniverseExt.cs" />
     <Compile Include="Extensions\WarExt.cs" />
-    <Compile Include="Infrastructure\Constants.cs" />
     <Compile Include="Infrastructure\Scopes.cs" />
     <Compile Include="Models\Alliance\Detail.cs" />
     <Compile Include="Models\Alliance\Summary.cs" />
     <Compile Include="Models\Alliance\AllianceIcons.cs" />
     <Compile Include="Models\Alliance\AllianceNames.cs" />
+    <Compile Include="Models\Mail\MailPostModel.cs" />
+    <Compile Include="Models\Mail\MailPostRequest.cs" />
+    <Compile Include="Models\Mail\Recipient.cs" />
     <Compile Include="Models\Shared\Icons.cs" />
     <Compile Include="Models\Constellation.cs" />
     <Compile Include="Models\Corporation\Detail.cs" />
     <Compile Include="Models\IgnoreDataMemberAttribute.cs" />
     <Compile Include="Models\Shared\IdList.cs" />
+    <Compile Include="Models\Shared\RefreshTokenRequestModel.cs" />
+    <Compile Include="Models\Shared\RefreshTokenResponseModel.cs" />
     <Compile Include="Models\Universe\ItemType.cs" />
     <Compile Include="Models\Region.cs" />
     <Compile Include="Models\Corporation\Summary.cs" />
@@ -82,7 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>

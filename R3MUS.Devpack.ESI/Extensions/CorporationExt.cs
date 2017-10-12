@@ -8,7 +8,7 @@ namespace R3MUS.Devpack.ESI.Extensions
     {
         public static void GetCorporation(this Detail me)
         {
-            var reqUri = string.Format("{0}/{1}/{2}/?{3}", Resources.BaseURI, Constants.Corporations, me.Id.ToString(), Resources.BaseURITail);
+            var reqUri = string.Format("{0}/{1}/{2}/?{3}", Resources.BaseURI, Resources.Corporations, me.Id.ToString(), Resources.BaseURITail);
             var obj = (Detail)Web.BaseRequest(reqUri).Deserialize(typeof(Detail));
             me.SetProperties(obj);
         }

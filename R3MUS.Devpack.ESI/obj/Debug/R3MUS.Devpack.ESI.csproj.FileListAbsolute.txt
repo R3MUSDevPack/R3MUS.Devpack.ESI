@@ -10,3 +10,10 @@ C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Dev
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.Resources.resources
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csproj.GenerateResource.Cache
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.pdb
+C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.ESI.dll
+C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.ESI.pdb
+C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.Core.dll
+C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.dll
+C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.Core.pdb

@@ -1,21 +1,36 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ploeh.AutoFixture;
+using R3MUS.Devpack.Core;
+using R3MUS.Devpack.ESI.Models.Shared;
+using R3MUS.Devpack.ESI.Tests.Properties;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace R3MUS.Devpack.ESI.Tests
 {
     public class TestBase
     {
-        public IFixture Fixture;
+        protected string _accessToken;
+        protected string _authHeader;
+
+        protected IFixture Fixture;
 
         [TestInitialize]
         public void TestInitialise()
         {
             Fixture = new Fixture();
+
+            var headers = new Dictionary<string, string>();
+            headers.Add("Content-Type", "application/json");
+
+            _authHeader = string.Concat("Basic ", Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes("5410c7b49983452d9a7276ef6b2007c1:n7ep7DQji2Bl8DZcA9lYdHcsybDYRSoLz9aKjJGY")));
+
+            headers.Add("Authorization", _authHeader);
+
+            var response = Web.Post<RefreshTokenResponseModel>(string.Format(Resources.AuthorisationUrlFormat, Resources.Token), headers,
+                new RefreshTokenRequestModel() { GrantType = "refresh_token", RefreshToken = Settings.Default.RefreshToken }
+                );
+            _accessToken = response.AccessToken;
         }
     }
 }

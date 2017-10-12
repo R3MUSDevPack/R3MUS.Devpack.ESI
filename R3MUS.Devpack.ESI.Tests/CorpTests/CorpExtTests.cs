@@ -11,7 +11,8 @@ namespace R3MUS.Devpack.ESI.Tests.CorpTests
         public void GetCorp_ReturnValid()
         {
             //  Arrange
-            var corpId = 98522858;
+            var corpId = Properties.Settings.Default.CorporationId;
+
             //  Act
             var corpResponse = new Detail(corpId);
 

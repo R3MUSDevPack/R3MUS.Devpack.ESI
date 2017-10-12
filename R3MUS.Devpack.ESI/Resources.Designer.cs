@@ -22,7 +22,7 @@ namespace R3MUS.Devpack.ESI {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace R3MUS.Devpack.ESI {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("R3MUS.Devpack.ESI.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace R3MUS.Devpack.ESI {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,9 +61,54 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to alliance_ids.
+        /// </summary>
+        public static string AllianceIds {
+            get {
+                return ResourceManager.GetString("AllianceIds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to alliances.
+        /// </summary>
+        public static string Alliances {
+            get {
+                return ResourceManager.GetString("Alliances", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://login.eveonline.com/oauth/{0}.
+        /// </summary>
+        public static string AuthorisationUrlFormat {
+            get {
+                return ResourceManager.GetString("AuthorisationUrlFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to authorize.
+        /// </summary>
+        public static string Authorise {
+            get {
+                return ResourceManager.GetString("Authorise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Authorization.
+        /// </summary>
+        public static string Authorization {
+            get {
+                return ResourceManager.GetString("Authorization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &amp;language=en-us.
         /// </summary>
-        internal static string BaseTailExtra {
+        public static string BaseTailExtra {
             get {
                 return ResourceManager.GetString("BaseTailExtra", resourceCulture);
             }
@@ -72,7 +117,7 @@ namespace R3MUS.Devpack.ESI {
         /// <summary>
         ///   Looks up a localized string similar to https://esi.tech.ccp.is/latest.
         /// </summary>
-        internal static string BaseURI {
+        public static string BaseURI {
             get {
                 return ResourceManager.GetString("BaseURI", resourceCulture);
             }
@@ -81,9 +126,117 @@ namespace R3MUS.Devpack.ESI {
         /// <summary>
         ///   Looks up a localized string similar to datasource=tranquility.
         /// </summary>
-        internal static string BaseURITail {
+        public static string BaseURITail {
             get {
                 return ResourceManager.GetString("BaseURITail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to characters.
+        /// </summary>
+        public static string Characters {
+            get {
+                return ResourceManager.GetString("Characters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to constellations.
+        /// </summary>
+        public static string Constellations {
+            get {
+                return ResourceManager.GetString("Constellations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to corporations.
+        /// </summary>
+        public static string Corporations {
+            get {
+                return ResourceManager.GetString("Corporations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to icons.
+        /// </summary>
+        public static string Icons {
+            get {
+                return ResourceManager.GetString("Icons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to mail.
+        /// </summary>
+        public static string Mail {
+            get {
+                return ResourceManager.GetString("Mail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to names.
+        /// </summary>
+        public static string Names {
+            get {
+                return ResourceManager.GetString("Names", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to regions.
+        /// </summary>
+        public static string Regions {
+            get {
+                return ResourceManager.GetString("Regions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to systems.
+        /// </summary>
+        public static string Systems {
+            get {
+                return ResourceManager.GetString("Systems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to token.
+        /// </summary>
+        public static string Token {
+            get {
+                return ResourceManager.GetString("Token", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to types.
+        /// </summary>
+        public static string Types {
+            get {
+                return ResourceManager.GetString("Types", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to universe.
+        /// </summary>
+        public static string Universe {
+            get {
+                return ResourceManager.GetString("Universe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wars.
+        /// </summary>
+        public static string Wars {
+            get {
+                return ResourceManager.GetString("Wars", resourceCulture);
             }
         }
     }
