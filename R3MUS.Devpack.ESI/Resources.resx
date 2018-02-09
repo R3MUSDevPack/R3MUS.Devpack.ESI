@@ -123,6 +123,9 @@
   <data name="Alliances" xml:space="preserve">
     <value>alliances</value>
   </data>
+  <data name="Ampersand" xml:space="preserve">
+    <value>&amp;</value>
+  </data>
   <data name="AuthorisationUrlFormat" xml:space="preserve">
     <value>https://login.eveonline.com/oauth/{0}</value>
   </data>
@@ -131,6 +134,9 @@
   </data>
   <data name="Authorization" xml:space="preserve">
     <value>Authorization</value>
+  </data>
+  <data name="BaseHostName" xml:space="preserve">
+    <value>login.eveonline.com</value>
   </data>
   <data name="BaseTailExtra" xml:space="preserve">
     <value>&amp;language=en-us</value>
@@ -141,11 +147,20 @@
   <data name="BaseURITail" xml:space="preserve">
     <value>datasource=tranquility</value>
   </data>
+  <data name="CharacterIds" xml:space="preserve">
+    <value>character_ids</value>
+  </data>
   <data name="Characters" xml:space="preserve">
     <value>characters</value>
   </data>
+  <data name="ClientIdFormat" xml:space="preserve">
+    <value>client_id={0}</value>
+  </data>
   <data name="Constellations" xml:space="preserve">
     <value>constellations</value>
+  </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>contracts</value>
   </data>
   <data name="Corporations" xml:space="preserve">
     <value>corporations</value>
@@ -159,8 +174,29 @@
   <data name="Names" xml:space="preserve">
     <value>names</value>
   </data>
+  <data name="Plus" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="RedirectURIFormat" xml:space="preserve">
+    <value>redirect_uri={0}</value>
+  </data>
   <data name="Regions" xml:space="preserve">
     <value>regions</value>
+  </data>
+  <data name="ResponseTypeModifier" xml:space="preserve">
+    <value>response_type=code</value>
+  </data>
+  <data name="ScopeFormat" xml:space="preserve">
+    <value>scope={0}</value>
+  </data>
+  <data name="Stations" xml:space="preserve">
+    <value>stations</value>
+  </data>
+  <data name="Structures" xml:space="preserve">
+    <value>structures</value>
   </data>
   <data name="Systems" xml:space="preserve">
     <value>systems</value>
@@ -173,6 +209,9 @@
   </data>
   <data name="Universe" xml:space="preserve">
     <value>universe</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>verify</value>
   </data>
   <data name="Wars" xml:space="preserve">
     <value>wars</value>

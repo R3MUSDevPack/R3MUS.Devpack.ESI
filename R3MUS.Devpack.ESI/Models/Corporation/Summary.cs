@@ -2,7 +2,7 @@
 
 namespace R3MUS.Devpack.ESI.Models.Corporation
 {
-    public partial class Summary
+    public class Summary
     {
         [JsonProperty(PropertyName = "corporation_id")]
         public int Id { get; set; }

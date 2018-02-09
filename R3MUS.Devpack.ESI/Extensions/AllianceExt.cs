@@ -15,7 +15,7 @@ namespace R3MUS.Devpack.ESI.Extensions
             var reqUri = string.Format("{0}/{1}/?{2}",
 				Resources.BaseURI, Resources.Alliances, Resources.BaseURITail);
 
-            return new IdList() { Ids = (List<long>)Web.BaseRequest(reqUri).Deserialize(typeof(List<long>)) };
+            return new IdList() { Ids = Web.BaseRequest(reqUri).Deserialize<List<long>>() };
         }
 
         public static AllianceNames GetAllianceNames(this IdList me)
@@ -23,7 +23,7 @@ namespace R3MUS.Devpack.ESI.Extensions
             var idStr = WebUtility.UrlEncode(string.Join(",", me.Ids));
             var reqUri = string.Format("{0}/{1}/{2}/?{3}={4}&{5}", Resources.BaseURI, Resources.Alliances, Resources.Names,
 				Resources.AllianceIds, idStr, Resources.BaseURITail);
-            return new AllianceNames() { AllianceDetail = (Summary[])Web.BaseRequest(reqUri).Deserialize(typeof(Summary[])) };
+            return new AllianceNames() { AllianceDetail = Web.BaseRequest(reqUri).Deserialize<Summary[]>() };
         }
 
         public static void GetCorporationIds(this Detail me)
@@ -33,7 +33,7 @@ namespace R3MUS.Devpack.ESI.Extensions
                 var reqUri = string.Format("{0}/{1}/{2}/{3}/{4}", Resources.BaseURI, Resources.Alliances, me.Id.ToString(),
 					Resources.Corporations, Resources.BaseURITail);
 
-                me.CorporationIds = (List<long>)Web.BaseRequest(reqUri).Deserialize(typeof(List<long>));
+                me.CorporationIds = Web.BaseRequest(reqUri).Deserialize<List<long>>();
             }
             else
             {
@@ -45,7 +45,7 @@ namespace R3MUS.Devpack.ESI.Extensions
         {
             var reqUri = string.Format("{0}/{1}/{2}/?{3}", Resources.BaseURI, Resources.Alliances, me.Id.ToString(), Resources.BaseURITail);
 
-            var obj = (Detail)Web.BaseRequest(reqUri).Deserialize(typeof(Detail));
+            var obj = Web.BaseRequest(reqUri).Deserialize<Detail>();
             me.SetProperties(obj);
         }
 
@@ -55,7 +55,7 @@ namespace R3MUS.Devpack.ESI.Extensions
             {
                 var reqUri = string.Format("{0}/{1}/{2}/{3}", Resources.BaseURI, Resources.Alliances, me.Id.ToString(), Resources.BaseURITail);
 
-                var obj = (AllianceIcons)Web.BaseRequest(reqUri).Deserialize(typeof(AllianceIcons));
+                var obj = Web.BaseRequest(reqUri).Deserialize<AllianceIcons>();
                 me.Icons = obj.Icons;
             }
             else

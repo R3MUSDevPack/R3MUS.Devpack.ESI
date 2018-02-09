@@ -12,15 +12,35 @@ namespace R3MUS.Devpack.ESI.Extensions
         {
             var reqUri = string.Format("{0}/{1}/{2}", Resources.BaseURI, Resources.Universe, Resources.Types, Resources.BaseURITail);
 
-            return new IdList() { Ids = (List<long>)Web.BaseRequest(reqUri).Deserialize(typeof(List<long>)) };
+            return new IdList() { Ids = Web.BaseRequest(reqUri).Deserialize<List<long>>() };
         }
 
         public static void GetItemType(this ItemType me)
         {
             var reqUri = string.Format("{0}/{1}/{2}/{3}", Resources.BaseURI, Resources.Universe, Resources.Types, me.Id.ToString(), Resources.BaseURITail);
 
-            var obj = (ItemType)Web.BaseRequest(reqUri).Deserialize(typeof(ItemType));
+            var obj = Web.BaseRequest(reqUri).Deserialize<ItemType>();
             me.SetProperties(obj);
+        }
+
+        public static void GetStation(this Station me)
+        {
+            var id = me.Id;
+            var reqUri = string.Format("{0}/{1}/{2}/{3}", Resources.BaseURI, Resources.Universe, Resources.Stations, id.ToString(), Resources.BaseURITail);
+
+            var obj = Web.BaseRequest(reqUri).Deserialize<Station>();
+            me.SetProperties(obj);
+            me.Id = id;
+        }
+
+        public static void GetStructure(this Structure me, List<KeyValuePair<string, string>> authorisationHeaders)
+        {
+            var id = me.Id;
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Universe, Resources.Structures, id.ToString());
+
+            var obj = Web.BaseRequest(reqUri, authorisationHeaders).Deserialize<Structure>();
+            me.SetProperties(obj);
+            me.Id = id;
         }
     }
 }

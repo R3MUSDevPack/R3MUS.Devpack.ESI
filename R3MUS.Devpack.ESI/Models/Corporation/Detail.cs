@@ -47,6 +47,7 @@ namespace R3MUS.Devpack.ESI.Models.Corporation
         {
             Id = id;
             this.GetCorporation();
+            Id = id;
         }
     }
 

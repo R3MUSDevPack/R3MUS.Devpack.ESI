@@ -79,6 +79,15 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &amp;.
+        /// </summary>
+        public static string Ampersand {
+            get {
+                return ResourceManager.GetString("Ampersand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to https://login.eveonline.com/oauth/{0}.
         /// </summary>
         public static string AuthorisationUrlFormat {
@@ -102,6 +111,15 @@ namespace R3MUS.Devpack.ESI {
         public static string Authorization {
             get {
                 return ResourceManager.GetString("Authorization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to login.eveonline.com.
+        /// </summary>
+        public static string BaseHostName {
+            get {
+                return ResourceManager.GetString("BaseHostName", resourceCulture);
             }
         }
         
@@ -133,6 +151,15 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to character_ids.
+        /// </summary>
+        public static string CharacterIds {
+            get {
+                return ResourceManager.GetString("CharacterIds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to characters.
         /// </summary>
         public static string Characters {
@@ -142,11 +169,29 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to client_id={0}.
+        /// </summary>
+        public static string ClientIdFormat {
+            get {
+                return ResourceManager.GetString("ClientIdFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to constellations.
         /// </summary>
         public static string Constellations {
             get {
                 return ResourceManager.GetString("Constellations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to contracts.
+        /// </summary>
+        public static string Contracts {
+            get {
+                return ResourceManager.GetString("Contracts", resourceCulture);
             }
         }
         
@@ -187,11 +232,74 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to +.
+        /// </summary>
+        public static string Plus {
+            get {
+                return ResourceManager.GetString("Plus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ?.
+        /// </summary>
+        public static string Question {
+            get {
+                return ResourceManager.GetString("Question", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to redirect_uri={0}.
+        /// </summary>
+        public static string RedirectURIFormat {
+            get {
+                return ResourceManager.GetString("RedirectURIFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to regions.
         /// </summary>
         public static string Regions {
             get {
                 return ResourceManager.GetString("Regions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to response_type=code.
+        /// </summary>
+        public static string ResponseTypeModifier {
+            get {
+                return ResourceManager.GetString("ResponseTypeModifier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to scope={0}.
+        /// </summary>
+        public static string ScopeFormat {
+            get {
+                return ResourceManager.GetString("ScopeFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to stations.
+        /// </summary>
+        public static string Stations {
+            get {
+                return ResourceManager.GetString("Stations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to structures.
+        /// </summary>
+        public static string Structures {
+            get {
+                return ResourceManager.GetString("Structures", resourceCulture);
             }
         }
         
@@ -228,6 +336,15 @@ namespace R3MUS.Devpack.ESI {
         public static string Universe {
             get {
                 return ResourceManager.GetString("Universe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to verify.
+        /// </summary>
+        public static string Verify {
+            get {
+                return ResourceManager.GetString("Verify", resourceCulture);
             }
         }
         

@@ -47,3 +47,15 @@ C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Dev
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\obj\Debug\R3MUS.Devpack.ESI.Tests.dll
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\obj\Debug\R3MUS.Devpack.ESI.Tests.pdb
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\R3MUS.Devpack.Core.pdb
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\R3MUS.Devpack.Core.pdb
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.WebPages.Deployment.xml

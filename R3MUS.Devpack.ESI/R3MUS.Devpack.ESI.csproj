@@ -30,17 +30,46 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="R3MUS.Devpack.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Source\Repos\R3MUS.Devpack.Core\R3MUS.Devpack.Core\bin\Debug\R3MUS.Devpack.Core.dll</HintPath>
+      <HintPath>..\..\R3MUS.Devpack.Core\R3MUS.Devpack.Core\bin\Debug\R3MUS.Devpack.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,15 +79,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\AllianceExt.cs" />
+    <Compile Include="Extensions\CharacterExt.cs" />
     <Compile Include="Extensions\CorporationExt.cs" />
+    <Compile Include="Extensions\EnumExt.cs" />
     <Compile Include="Extensions\MailPostModelExt.cs" />
     <Compile Include="Extensions\UniverseExt.cs" />
     <Compile Include="Extensions\WarExt.cs" />
-    <Compile Include="Infrastructure\Scopes.cs" />
+    <Compile Include="Infrastructure\Scope.cs" />
+    <Compile Include="Infrastructure\ScopeBuilder.cs" />
+    <Compile Include="Infrastructure\Scopes\Calendar.cs" />
+    <Compile Include="Infrastructure\Scopes\Characters.cs" />
+    <Compile Include="Infrastructure\Scopes\Contracts.cs" />
+    <Compile Include="Infrastructure\Scopes\Corporation.cs" />
+    <Compile Include="Infrastructure\Scopes\Location.cs" />
+    <Compile Include="Infrastructure\Scopes\Mail.cs" />
+    <Compile Include="Infrastructure\Scopes\Universe.cs" />
     <Compile Include="Models\Alliance\Detail.cs" />
     <Compile Include="Models\Alliance\Summary.cs" />
     <Compile Include="Models\Alliance\AllianceIcons.cs" />
     <Compile Include="Models\Alliance\AllianceNames.cs" />
+    <Compile Include="Models\Character\CharacterNames.cs" />
+    <Compile Include="Models\Character\Detail.cs" />
+    <Compile Include="Models\Character\Summary.cs" />
+    <Compile Include="Models\Corporation\Contract.cs" />
     <Compile Include="Models\Mail\MailPostModel.cs" />
     <Compile Include="Models\Mail\MailPostRequest.cs" />
     <Compile Include="Models\Mail\Recipient.cs" />
@@ -67,12 +110,19 @@
     <Compile Include="Models\Corporation\Detail.cs" />
     <Compile Include="Models\IgnoreDataMemberAttribute.cs" />
     <Compile Include="Models\Shared\IdList.cs" />
+    <Compile Include="Models\Shared\IHasIntId.cs" />
+    <Compile Include="Models\Shared\IHasLongId.cs" />
     <Compile Include="Models\Shared\RefreshTokenRequestModel.cs" />
     <Compile Include="Models\Shared\RefreshTokenResponseModel.cs" />
     <Compile Include="Models\Universe\ItemType.cs" />
     <Compile Include="Models\Region.cs" />
     <Compile Include="Models\Corporation\Summary.cs" />
     <Compile Include="Models\SolarSystem.cs" />
+    <Compile Include="Models\Universe\Position.cs" />
+    <Compile Include="Models\Universe\Station.cs" />
+    <Compile Include="Models\Universe\Structure.cs" />
+    <Compile Include="Models\Verification\Summary.cs" />
+    <Compile Include="Models\Verification\TokenResponse.cs" />
     <Compile Include="Models\War.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources.Designer.cs">

@@ -31,5 +31,19 @@ namespace R3MUS.Devpack.ESI.Tests.UniverseTests
 			//	Assert
 			result.Should().NotBeNull();
 		}
+
+        [TestMethod]
+        public void GetStructure_ReturnsValid()
+        {
+            //  Arrange
+            var authHeader = "D4p0LwiMrkqp8du72J7k-ypjZOcvos1ZvShi9DQkKRnRd7xX-J9XMI90RnWMMNu1wzOlGUpEGSsa3sKZBkW9Vg2";
+            var structureId = 1023736622218;
+
+            //  Act
+            var result = new Structure(structureId, authHeader);
+
+            //  Assert
+            result.Should().NotBeNull();
+        }
 	}
 }

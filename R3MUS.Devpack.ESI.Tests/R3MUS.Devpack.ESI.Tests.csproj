@@ -61,7 +61,7 @@
     </Reference>
     <Reference Include="R3MUS.Devpack.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Source\Repos\R3MUS.Devpack.Core\R3MUS.Devpack.Core\bin\Debug\R3MUS.Devpack.Core.dll</HintPath>
+      <HintPath>..\..\R3MUS.Devpack.Core\R3MUS.Devpack.Core\bin\Debug\R3MUS.Devpack.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
@@ -85,6 +85,7 @@
     <Compile Include="AllianceTests\AllianceExtTests.cs" />
     <Compile Include="CorpTests\CorpExtTests.cs" />
     <Compile Include="MailTests\SendMailTests.cs" />
+	  <Compile Include="ToonTests\CharacterExtTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

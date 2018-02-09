@@ -15,7 +15,11 @@ namespace R3MUS.Devpack.ESI.Tests.MailTests
         {
             //  Arrange
             var mailBody = Fixture.Build<MailPostModel>()
-                .With(w => w.Recipients, new Recipient[] { new Recipient() { RecipientId = Settings.Default.MailRecipientId, RecipientType = "character" } })
+                .With(w => w.Recipients, new Recipient[] {
+                    new Recipient() { RecipientId = Settings.Default.MailRecipientId, RecipientType = "character" }
+                })
+                .With(w => w.Subject, Properties.Settings.Default.MailHeader)
+                .With(w => w.Body, Properties.Settings.Default.MailText)
                 .Create();
 
             var mail = Fixture.Build<MailPostRequest>()
