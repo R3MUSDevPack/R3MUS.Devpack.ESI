@@ -23,7 +23,7 @@ namespace R3MUS.Devpack.ESI.Tests
             var headers = new Dictionary<string, string>();
             headers.Add("Content-Type", "application/json");
 
-            _authHeader = string.Concat("Basic ", Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes("5410c7b49983452d9a7276ef6b2007c1:n7ep7DQji2Bl8DZcA9lYdHcsybDYRSoLz9aKjJGY")));
+            _authHeader = string.Concat("Basic ", Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes("")));
 
             headers.Add("Authorization", _authHeader);
 
