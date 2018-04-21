@@ -55,13 +55,15 @@
       <HintPath>..\packages\Moq.4.7.1\lib\net45\Moq.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\R3MUS.Devpack.Core.1.0.0.1\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Ploeh.AutoFixture, Version=3.16.4.0, Culture=neutral, PublicKeyToken=b24654c590009d4f, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoFixture.3.16.4\lib\net40\Ploeh.AutoFixture.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="R3MUS.Devpack.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\R3MUS.Devpack.Core\R3MUS.Devpack.Core\bin\Debug\R3MUS.Devpack.Core.dll</HintPath>
+      <HintPath>..\packages\R3MUS.Devpack.Core.1.0.0.1\lib\R3MUS.Devpack.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
@@ -85,7 +87,7 @@
     <Compile Include="AllianceTests\AllianceExtTests.cs" />
     <Compile Include="CorpTests\CorpExtTests.cs" />
     <Compile Include="MailTests\SendMailTests.cs" />
-	  <Compile Include="ToonTests\CharacterExtTests.cs" />
+    <Compile Include="ToonTests\CharacterExtTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -109,6 +111,9 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SearchTests\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

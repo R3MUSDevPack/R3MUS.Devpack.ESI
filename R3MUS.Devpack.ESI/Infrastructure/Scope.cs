@@ -28,8 +28,6 @@ namespace R3MUS.Devpack.ESI.Infrastructure
         ReadClones,
         [Display(Name = "esi-bookmarks.read_character_bookmarks.v1")]
         ReadCharacterBookmarks,
-        [Display(Name = "esi-killmails.read_killmails.v1")]
-        ReadKillmails,
         [Display(Name = "esi-assets.read_assets.v1")]
         ReadAssets,
         [Display(Name = "esi-planets.manage_planets.v1")]

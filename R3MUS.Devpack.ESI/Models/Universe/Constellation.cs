@@ -1,44 +1,29 @@
 ﻿using Newtonsoft.Json;
+using R3MUS.Devpack.ESI.Extensions;
+using System.Collections.Generic;
 
-namespace R3MUS.Devpack.ESI.Models
+namespace R3MUS.Devpack.ESI.Models.Universe
 {
     public class Constellation
     {
-        [JsonProperty(PropertyName = "constellation_id")]
+        [JsonProperty (PropertyName = "constellation_id")]
         public long Id { get; set; }
-
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
-
         [JsonProperty(PropertyName = "position")]
         public Position Position { get; set; }
-
         [JsonProperty(PropertyName = "region_id")]
-        public int Region_Id { get; set; }
-
+        public long RegionId { get; set; }
         [JsonProperty(PropertyName = "systems")]
-        public int[] Systems { get; set; }
-
-        [JsonIgnore]
-        public Region Region { get; set; }
+        public List<long> Systems { get; set; }
 
         public Constellation()
-        {
-        }
+        {}
 
         public Constellation(long id)
         {
             Id = id;
-            //this.GetConstellation();
-            Region = new Region(Region_Id);
+            this.GetConstellation();
         }
     }
-
-    public class Position
-    {
-        public float x { get; set; }
-        public float y { get; set; }
-        public float z { get; set; }
-    }
-
 }

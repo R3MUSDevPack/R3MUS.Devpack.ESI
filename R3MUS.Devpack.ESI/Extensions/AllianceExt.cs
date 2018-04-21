@@ -8,6 +8,12 @@ using R3MUS.Devpack.ESI.Models.Shared;
 
 namespace R3MUS.Devpack.ESI.Extensions
 {
+    /// <summary>
+    /// Methods to access alliance endpoints
+    /// </summary>
+    /// <checked-as-complete>
+    /// 2018-04-21
+    /// </checked-as-complete>
     public static class AllianceExt
     {
         public static IdList GetAlliances(this Detail me)
@@ -18,12 +24,12 @@ namespace R3MUS.Devpack.ESI.Extensions
             return new IdList() { Ids = Web.BaseRequest(reqUri).Deserialize<List<long>>() };
         }
 
-        public static AllianceNames GetAllianceNames(this IdList me)
+        public static void GetAlliance(this Detail me)
         {
-            var idStr = WebUtility.UrlEncode(string.Join(",", me.Ids));
-            var reqUri = string.Format("{0}/{1}/{2}/?{3}={4}&{5}", Resources.BaseURI, Resources.Alliances, Resources.Names,
-				Resources.AllianceIds, idStr, Resources.BaseURITail);
-            return new AllianceNames() { AllianceDetail = Web.BaseRequest(reqUri).Deserialize<Summary[]>() };
+            var reqUri = string.Format("{0}/{1}/{2}/?{3}", Resources.BaseURI, Resources.Alliances, me.Id.ToString(), Resources.BaseURITail);
+
+            var obj = Web.BaseRequest(reqUri).Deserialize<Detail>();
+            me.SetProperties(obj);
         }
 
         public static void GetCorporationIds(this Detail me)
@@ -41,14 +47,6 @@ namespace R3MUS.Devpack.ESI.Extensions
             }
         }
 
-        public static void GetAlliance(this Detail me)
-        {
-            var reqUri = string.Format("{0}/{1}/{2}/?{3}", Resources.BaseURI, Resources.Alliances, me.Id.ToString(), Resources.BaseURITail);
-
-            var obj = Web.BaseRequest(reqUri).Deserialize<Detail>();
-            me.SetProperties(obj);
-        }
-
         public static void GetAllianceIcons(this Detail me)
         {
             if (me.Id > 0)
@@ -62,6 +60,14 @@ namespace R3MUS.Devpack.ESI.Extensions
             {
                 me.Icons = new Models.Shared.Icons();
             }
+        }
+
+        public static AllianceNames GetAllianceNames(this IdList me)
+        {
+            var idStr = WebUtility.UrlEncode(string.Join(",", me.Ids));
+            var reqUri = string.Format("{0}/{1}/{2}/?{3}={4}&{5}", Resources.BaseURI, Resources.Alliances, Resources.Names,
+				Resources.AllianceIds, idStr, Resources.BaseURITail);
+            return new AllianceNames() { AllianceDetail = Web.BaseRequest(reqUri).Deserialize<Summary[]>() };
         }
     }
 }

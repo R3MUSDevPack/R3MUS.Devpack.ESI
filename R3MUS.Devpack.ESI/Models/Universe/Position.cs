@@ -1,9 +1,14 @@
-﻿namespace R3MUS.Devpack.ESI.Models.Universe
+﻿using Newtonsoft.Json;
+
+namespace R3MUS.Devpack.ESI.Models.Universe
 {
     public class Position
     {
-        public long x { get; set; }
-        public long y { get; set; }
-        public long z { get; set; }
+        [JsonProperty(PropertyName = "x")]
+        public float X { get; set; }
+        [JsonProperty(PropertyName = "")]
+        public float Y { get; set; }
+        [JsonProperty(PropertyName = "z")]
+        public float Z { get; set; }
     }
 }

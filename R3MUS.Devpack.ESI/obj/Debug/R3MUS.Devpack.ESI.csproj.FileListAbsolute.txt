@@ -1,10 +1,3 @@
-C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.ESI.dll
-C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.ESI.pdb
-C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.Core.dll
-C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.dll
-C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.pdb
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csprojResolveAssemblyReference.cache
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.Resources.resources
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csproj.GenerateResource.Cache
@@ -16,20 +9,31 @@ C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Dev
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.dll
 C:\Users\Chris\Documents\Visual Studio 2015\Projects\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.Core.pdb
-C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.Resources.resources
-C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csproj.GenerateResource.Cache
-C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.Core.pdb
-C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csprojResolveAssemblyReference.cache
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.ESI.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.ESI.pdb
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.Core.dll
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.Helpers.dll
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.Mvc.dll
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.Razor.dll
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.WebPages.Deployment.dll
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.WebPages.dll
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\R3MUS.Devpack.Core.pdb
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.Helpers.xml
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.Mvc.xml
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.Razor.xml
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.WebPages.xml
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.Resources.resources
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csproj.GenerateResource.Cache
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.pdb
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\AutoMapper.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Ninject.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\AutoMapper.xml
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Ninject.xml
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csprojResolveAssemblyReference.cache

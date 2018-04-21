@@ -153,6 +153,9 @@
   <data name="Characters" xml:space="preserve">
     <value>characters</value>
   </data>
+  <data name="CharacterSearchCategories" xml:space="preserve">
+    <value>categories=character&amp;search={0}&amp;strict=true</value>
+  </data>
   <data name="ClientIdFormat" xml:space="preserve">
     <value>client_id={0}</value>
   </data>
@@ -192,6 +195,9 @@
   <data name="ScopeFormat" xml:space="preserve">
     <value>scope={0}</value>
   </data>
+  <data name="Search" xml:space="preserve">
+    <value>search</value>
+  </data>
   <data name="Stations" xml:space="preserve">
     <value>stations</value>
   </data>
@@ -215,5 +221,20 @@
   </data>
   <data name="Wars" xml:space="preserve">
     <value>wars</value>
+  </data>
+  <data name="Killmails" xml:space="preserve">
+    <value>killmails</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>recent</value>
+  </data>
+  <data name="AgentsResearch" xml:space="preserve">
+    <value>agents_research</value>
+  </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>blueprints</value>
+  </data>
+  <data name="ChatChannels" xml:space="preserve">
+    <value>chat_channels</value>
   </data>
 </root>

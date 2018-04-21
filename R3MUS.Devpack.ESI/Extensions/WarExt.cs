@@ -1,6 +1,7 @@
 ﻿using R3MUS.Devpack.Core;
 using R3MUS.Devpack.ESI.Models;
 using R3MUS.Devpack.ESI.Models.Shared;
+using R3MUS.Devpack.ESI.Models.Wars;
 using System.Collections.Generic;
 
 namespace R3MUS.Devpack.ESI.Extensions

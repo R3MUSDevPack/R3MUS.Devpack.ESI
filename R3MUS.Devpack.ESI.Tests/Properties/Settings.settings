@@ -3,30 +3,22 @@
   <Profiles />
   <Settings>
     <Setting Name="CorporationId" Type="System.Int64" Scope="Application">
-      <Value Profile="(Default)">98356193</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="MailOriginatorId" Type="System.Int64" Scope="Application">
-      <Value Profile="(Default)">96843266</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="MailRecipientId" Type="System.Int64" Scope="Application">
-      <Value Profile="(Default)">93902200</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="RefreshToken" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">3v8aNWojwkHT1Wl7-RTOIAuyW2lJS2M4Ptij3u4EPBk1</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="MailText" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">&lt;font size="24" color="#ff00ff00"&gt;Greetings!&lt;/font&gt;&lt;br&gt;
-&lt;font size="14" color="#ff00ffff"&gt;On behalf of White Fang Militia I would like to extend an invitation to join our happy band of reprobates.&lt;/font&gt;&lt;br&gt;
-&lt;font size="14" color="#ffff00ff"&gt;We are a newbie-friendly, Faction Warfare corporation dedicated to training our members in the noble art of PvP combat with a wealth of training experience behind us. Our buyback system means that our members can make a good rate of isk by shooting war targets, capturing war complexes and contested systems. From these FW activities we earn faction loyalty points which are used to buy certain items cheaply and sell them at an ISK profit.&lt;br&gt;
-&lt;b&gt;In addition to this, we have shared access to a wormhole PI farm which allows our members to make even more ISK for a little setup and again sell it. Between these income streams we can pay for game-time, buy shiny spaceships &amp;amp; blow even more up (normally on alcohol fuelled fleets).&lt;/b&gt;&lt;br&gt;&lt;/font&gt;
-&lt;font size="14" color="#ff00ffff"&gt;&lt;i&gt;What do we ask in return? Just that everyone looks after each other, a good attitude on our Teamspeak and Slack is displayed and that fun is had. That's all: no API checks for joining, no interviews, no BS (unless I'm drunk again).&lt;/i&gt;&lt;/font&gt;&lt;br&gt;
-&lt;font size="14" color="#ffffff00"&gt;If this sounds like your thing, we look forward to your application. If not, I hope that we find ourselves facing off in true Eve-style: gloriously exploding into tiny pieces.&lt;/font&gt;&lt;br&gt;
-&lt;font size="14" color="#ffff0000"&gt;Public Channel: &lt;/font&gt;&lt;font size="14" color="#fff7931e"&gt;&lt;a href="joinChannel:-85835165//None//None"&gt;White Fang Militia Public&lt;/a&gt;&lt;/font&gt;
-&lt;font size="14" color="#ffff0000"&gt; &lt;br&gt;Corp Link: &lt;/font&gt;&lt;font size="14" color="#fff7931e"&gt;&lt;a href="recruitmentAd:98518643//131987"&gt;White Fang Militia&lt;/a&gt;&lt;br&gt;&lt;/font&gt;
-&lt;font size="18" color="#ff00ff00"&gt;o7&lt;br&gt;White Fang Recruitment&lt;/font&gt;</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="MailHeader" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">White Fang Militia Needs You!</Value>
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

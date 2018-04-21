@@ -61,6 +61,15 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to agents_research.
+        /// </summary>
+        public static string AgentsResearch {
+            get {
+                return ResourceManager.GetString("AgentsResearch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to alliance_ids.
         /// </summary>
         public static string AllianceIds {
@@ -151,6 +160,15 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to blueprints.
+        /// </summary>
+        public static string Blueprints {
+            get {
+                return ResourceManager.GetString("Blueprints", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to character_ids.
         /// </summary>
         public static string CharacterIds {
@@ -165,6 +183,24 @@ namespace R3MUS.Devpack.ESI {
         public static string Characters {
             get {
                 return ResourceManager.GetString("Characters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to categories=character&amp;search={0}&amp;strict=true.
+        /// </summary>
+        public static string CharacterSearchCategories {
+            get {
+                return ResourceManager.GetString("CharacterSearchCategories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to chat_channels.
+        /// </summary>
+        public static string ChatChannels {
+            get {
+                return ResourceManager.GetString("ChatChannels", resourceCulture);
             }
         }
         
@@ -214,6 +250,15 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to killmails.
+        /// </summary>
+        public static string Killmails {
+            get {
+                return ResourceManager.GetString("Killmails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to mail.
         /// </summary>
         public static string Mail {
@@ -250,6 +295,15 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to recent.
+        /// </summary>
+        public static string Recent {
+            get {
+                return ResourceManager.GetString("Recent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to redirect_uri={0}.
         /// </summary>
         public static string RedirectURIFormat {
@@ -282,6 +336,15 @@ namespace R3MUS.Devpack.ESI {
         public static string ScopeFormat {
             get {
                 return ResourceManager.GetString("ScopeFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to search.
+        /// </summary>
+        public static string Search {
+            get {
+                return ResourceManager.GetString("Search", resourceCulture);
             }
         }
         

@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using R3MUS.Devpack.ESI.Extensions;
 using R3MUS.Devpack.ESI.Models;
+using R3MUS.Devpack.ESI.Models.Wars;
 using System.Linq;
 
 namespace R3MUS.Devpack.ESI.Tests.WarTests

@@ -42,5 +42,29 @@ namespace R3MUS.Devpack.ESI.Extensions
             me.SetProperties(obj);
             me.Id = id;
         }
+
+        public static void GetSolarSystem(this SolarSystem me)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}", Resources.BaseURI, Resources.Universe, Resources.Systems, me.Id.ToString(), Resources.BaseURITail);
+
+            var obj = Web.BaseRequest(reqUri).Deserialize<SolarSystem>();
+            me.SetProperties(obj);
+        }
+
+        public static void GetConstellation(this Constellation me)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}", Resources.BaseURI, Resources.Universe, Resources.Constellations, me.Id.ToString(), Resources.BaseURITail);
+
+            var obj = Web.BaseRequest(reqUri).Deserialize<Constellation>();
+            me.SetProperties(obj);
+        }
+
+        public static void GetRegion(this Region me)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}", Resources.BaseURI, Resources.Universe, Resources.Regions, me.Id.ToString(), Resources.BaseURITail);
+
+            var obj = Web.BaseRequest(reqUri).Deserialize<Region>();
+            me.SetProperties(obj);
+        }
     }
 }

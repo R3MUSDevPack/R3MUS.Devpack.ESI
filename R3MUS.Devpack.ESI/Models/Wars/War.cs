@@ -3,9 +3,10 @@ using R3MUS.Devpack.ESI.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace R3MUS.Devpack.ESI.Models
+namespace R3MUS.Devpack.ESI.Models.Wars
 {
     public class War
     {
@@ -35,51 +36,17 @@ namespace R3MUS.Devpack.ESI.Models
 
         public War()
         {
-        
+
         }
         public War(long id)
         {
             Id = id;
             this.GetWar();
         }
-        
+
         public static List<long> GetWarIds(long? lastWarId = null)
         {
             return WarExt.GetWars().Ids.Where(warId => (lastWarId == null) || (warId > lastWarId)).ToList();
         }
     }
-
-    public class Aggressor
-    {
-        [JsonProperty(PropertyName = "ships_killed")]
-        public int ShipsKilled { get; set; }
-
-        [JsonProperty(PropertyName = "isk_destroyed")]
-        public float IskDestroyed { get; set; }
-
-        [OptionalField]
-        [JsonProperty(PropertyName = "alliance_id")]
-        public long? Alliance_Id;
-
-        [OptionalField]
-        [JsonProperty(PropertyName = "corporation_id")]
-        public long? Corporation_Id;
-    }
-
-    public class Defender
-    {
-        [JsonProperty(PropertyName = "ships_killed")]
-        public int ShipsKilled { get; set; }
-
-        [JsonProperty(PropertyName = "isk_destroyed")]
-        public float IskDestroyed { get; set; }
-
-        [OptionalField]
-        [JsonProperty(PropertyName = "alliance_id")]
-        public long? Alliance_Id;
-
-        [OptionalField]
-        [JsonProperty(PropertyName = "corporation_id")]
-        public long? Corporation_Id;
-    }    
 }

@@ -20,7 +20,10 @@ namespace R3MUS.Devpack.ESI.Models.Character
 		[JsonProperty(PropertyName = "corporation_id")]
 		public long CorporationId { get; set; }
 
-		[JsonProperty(PropertyName = "description")]
+        [JsonProperty(PropertyName = "alliance_id")]
+        public long? AllianceId { get; set; }
+
+        [JsonProperty(PropertyName = "description")]
 		public string Description { get; set; }
 
 		[JsonProperty(PropertyName = "gender")]
@@ -48,6 +51,11 @@ namespace R3MUS.Devpack.ESI.Models.Character
             Id = id;
             this.GetCharacter();
             Id = id;
+        }
+        public void LoadCharacterByName(string name)
+        {
+            Name = name;
+            this.GetCharacterByName();
         }
 	}
 }

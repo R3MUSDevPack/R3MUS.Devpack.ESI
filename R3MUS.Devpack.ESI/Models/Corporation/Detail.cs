@@ -10,28 +10,31 @@ namespace R3MUS.Devpack.ESI.Models.Corporation
         public long Id { get; set; }
 
         [JsonProperty(PropertyName = "alliance_id")]
-        public long? Alliance_Id { get; set; }
+        public long? AllianceId { get; set; }
 
         [JsonProperty(PropertyName = "ceo_id")]
-        public long CEO_Id { get; set; }
+        public long CEOId { get; set; }
 
-        [JsonProperty(PropertyName = "corporation_description")]
-        public string Corporation_Description { get; set; }
+        [JsonProperty(PropertyName = "description")]
+        public string Description { get; set; }
 
-        [JsonProperty(PropertyName = "corporation_name")]
-        public string Corporation_Name { get; set; }
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
 
-        [JsonProperty(PropertyName = "creation_date")]
-        public DateTime Creation_Date { get; set; }
+        [JsonProperty(PropertyName = "date_founded")]
+        public DateTime CreationDate { get; set; }
 
         [JsonProperty(PropertyName = "creator_id")]
-        public long Creator_Id { get; set; }
+        public long CreatorId { get; set; }
+
+        [JsonProperty(PropertyName = "faction_id")]
+        public long? FactionId { get; set; }
 
         [JsonProperty(PropertyName = "member_count")]
-        public long Member_Count { get; set; }
+        public long MemberCount { get; set; }
 
         [JsonProperty(PropertyName = "tax_rate")]
-        public float Tax_Rate { get; set; }
+        public float TaxRate { get; set; }
 
         [JsonProperty(PropertyName = "ticker")]
         public string Ticker { get; set; }

@@ -18,5 +18,19 @@ namespace R3MUS.Devpack.ESI.Tests.ToonTests
 			//  Assert
 			toonResponse.Should().NotBeNull();
 		}
+
+        [TestMethod]
+        public void LoadCharacterByName_ReturnsValid()
+        {
+            //  Arrange
+            var toonName = "Clyde en Marland";
+
+            //  Act
+            var toonResponse = new Detail();
+            toonResponse.LoadCharacterByName(toonName);
+
+            //  Assert
+            toonResponse.Id.Should().Be(93902200);
+        }
 	}
 }

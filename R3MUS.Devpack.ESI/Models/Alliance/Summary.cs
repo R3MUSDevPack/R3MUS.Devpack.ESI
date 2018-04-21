@@ -10,5 +10,4 @@ namespace R3MUS.Devpack.ESI.Models.Alliance
         [JsonProperty(PropertyName = "alliance_name")]
         public string Name { get; set; }
     }
-
 }
