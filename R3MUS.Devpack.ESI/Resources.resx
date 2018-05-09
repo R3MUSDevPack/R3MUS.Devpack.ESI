@@ -237,4 +237,7 @@
   <data name="ChatChannels" xml:space="preserve">
     <value>chat_channels</value>
   </data>
+  <data name="CorporationHistory" xml:space="preserve">
+    <value>corporationhistory</value>
+  </data>
 </root>

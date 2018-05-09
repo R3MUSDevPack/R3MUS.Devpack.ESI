@@ -14,7 +14,7 @@ namespace R3MUS.Devpack.ESI.Extensions
             me.SetProperties(obj);
         }
 
-        public static IEnumerable<Contract> GetContracts(this Detail me, string clientId, string applicationKey, string authToken)
+        public static IEnumerable<Contract> GetContracts(this Detail me, string authToken)
         {
             var headers = new List<KeyValuePair<string, string>>();
             headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
@@ -24,7 +24,7 @@ namespace R3MUS.Devpack.ESI.Extensions
             return obj;
         }
 
-        public static KillList GetKills(this Detail me, string clientId, string applicationKey, string authToken)
+        public static KillList GetKills(this Detail me, string authToken)
         {
             var headers = new List<KeyValuePair<string, string>>();
             headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));

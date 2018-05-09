@@ -37,3 +37,7 @@ C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Ninjec
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\AutoMapper.xml
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Ninject.xml
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csprojResolveAssemblyReference.cache
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Geckofx-Core.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Geckofx-Winforms.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Geckofx-Core.pdb
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Geckofx-Winforms.pdb

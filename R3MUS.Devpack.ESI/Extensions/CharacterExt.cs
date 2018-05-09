@@ -26,24 +26,47 @@ namespace R3MUS.Devpack.ESI.Extensions
             me.Id = id;
 		}
 
-        public static IEnumerable<AgentsResearch> GetAgentsResearch(this Detail me)
+        public static IEnumerable<AgentsResearch> GetAgentsResearch(this Detail me, string authToken)
         {
             var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.AgentsResearch);
             return Web.BaseRequest(reqUri).Deserialize<IEnumerable<AgentsResearch>>();
         }
 
-        public static IEnumerable<Blueprint> GetBlueprints(this Detail me)
+        public static IEnumerable<Blueprint> GetBlueprints(this Detail me, string authToken)
         {
             var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.Blueprints);
-            return Web.BaseRequest(reqUri).Deserialize<IEnumerable<Blueprint>>();
+
+            var headers = new List<KeyValuePair<string, string>>();
+            headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
+
+            return Web.BaseRequest(reqUri, headers).Deserialize<IEnumerable<Blueprint>>();
         }
 
-        public static IEnumerable<ChatChannel> GetChannels(this Detail me)
+        public static IEnumerable<ChatChannel> GetChannels(this Detail me, string authToken)
         {
             var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.ChatChannels);
-            return Web.BaseRequest(reqUri).Deserialize<IEnumerable<ChatChannel>>();
+
+            var headers = new List<KeyValuePair<string, string>>();
+            headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
+
+            return Web.BaseRequest(reqUri, headers).Deserialize<IEnumerable<ChatChannel>>();
         }
 
+        public static IEnumerable<HistoricCorporationModel> GetEmploymentHistory(this Detail me)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.CorporationHistory);
+            return Web.BaseRequest(reqUri).Deserialize<IEnumerable<HistoricCorporationModel>>();
+        }
+
+        public static IEnumerable<ContactModel> GetContacts(this Detail me, string authToken)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.CorporationHistory);
+
+            var headers = new List<KeyValuePair<string, string>>();
+            headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
+
+            return Web.BaseRequest(reqUri, headers).Deserialize<IEnumerable<ContactModel>>();
+        }
 
         public static void GetCharacterByName(this Detail me)
         {

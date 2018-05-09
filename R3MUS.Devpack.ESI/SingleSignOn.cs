@@ -10,26 +10,14 @@ using System.Web.Mvc;
 
 namespace R3MUS.Devpack.ESI
 {
-    public class SingleSignOn
+    public partial class SingleSignOn
 	{
-		public static ActionResult SignOn(string redirectURI, string clientId, List<string> scopes )
+        /// <summary>
+        /// Use for MVC / Webforms
+        /// </summary>
+		public static ActionResult SignOn(string redirectURI, string clientId, List<string> scopes)
 		{
-            return new RedirectResult(
-                string.Concat(
-                    string.Format(
-                        Resources.AuthorisationUrlFormat, 
-                        Resources.Authorise),
-                    Resources.Question,
-                    Resources.ResponseTypeModifier,
-                    Resources.Ampersand,
-                    string.Format(Resources.RedirectURIFormat, redirectURI),
-                    Resources.Ampersand,
-                    string.Format(Resources.ClientIdFormat, clientId),
-                    Resources.Ampersand,
-                    new ScopeBuilder(scopes).Build(),
-                    Resources.Ampersand,
-                    Guid.NewGuid().ToString()
-                ));
+            return new RedirectResult(GetUrl(redirectURI, clientId, scopes));
         }
 
         public static string GetAuthorisationCode(Uri requestUri)
@@ -118,6 +106,23 @@ namespace R3MUS.Devpack.ESI
             task.Wait();
 
             return result;
+        }
+
+        internal static string GetUrl(string redirectURI, string clientId, List<string> scopes)
+        {
+            return string.Concat(string.Format(Resources.AuthorisationUrlFormat,
+                        Resources.Authorise),
+                    Resources.Question,
+                    Resources.ResponseTypeModifier,
+                    Resources.Ampersand,
+                    string.Format(Resources.RedirectURIFormat, redirectURI),
+                    Resources.Ampersand,
+                    string.Format(Resources.ClientIdFormat, clientId),
+                    Resources.Ampersand,
+                    new ScopeBuilder(scopes).Build(),
+                    Resources.Ampersand,
+                    Guid.NewGuid().ToString()
+                );
         }
 	}
 }

@@ -232,6 +232,15 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to corporationhistory.
+        /// </summary>
+        public static string CorporationHistory {
+            get {
+                return ResourceManager.GetString("CorporationHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to corporations.
         /// </summary>
         public static string Corporations {

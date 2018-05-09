@@ -59,3 +59,7 @@ C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\obj\Debug\R3MUS.Devpack.ESI.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\obj\Debug\R3MUS.Devpack.ESI.Tests.dll
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\obj\Debug\R3MUS.Devpack.ESI.Tests.pdb
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\Geckofx-Winforms.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\Geckofx-Core.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\Geckofx-Winforms.pdb
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\Geckofx-Core.pdb
