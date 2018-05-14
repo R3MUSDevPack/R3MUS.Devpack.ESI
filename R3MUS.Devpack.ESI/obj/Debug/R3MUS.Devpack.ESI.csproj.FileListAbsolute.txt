@@ -41,3 +41,6 @@ C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Geckof
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Geckofx-Winforms.dll
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Geckofx-Core.pdb
 C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\bin\Debug\Geckofx-Winforms.pdb
+C:\Users\Chris\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csprojResolveAssemblyReference.cache
+C:\Users\Chris\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.Resources.resources
+C:\Users\Chris\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI\obj\Debug\R3MUS.Devpack.ESI.csproj.GenerateResource.Cache

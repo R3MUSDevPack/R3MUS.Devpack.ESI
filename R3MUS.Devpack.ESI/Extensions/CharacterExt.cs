@@ -42,6 +42,16 @@ namespace R3MUS.Devpack.ESI.Extensions
             return Web.BaseRequest(reqUri, headers).Deserialize<IEnumerable<Blueprint>>();
         }
 
+        public static CorporationRolesModel GetRolesInCorporation(this Detail me, string authToken)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.Blueprints);
+
+            var headers = new List<KeyValuePair<string, string>>();
+            headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
+
+            return Web.BaseRequest(reqUri, headers).Deserialize<CorporationRolesModel>();
+        }
+
         public static IEnumerable<ChatChannel> GetChannels(this Detail me, string authToken)
         {
             var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.ChatChannels);
