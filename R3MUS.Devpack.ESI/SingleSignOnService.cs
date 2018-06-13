@@ -1,7 +1,6 @@
-﻿using Gecko.WebIDL;
-using R3MUS.Devpack.ESI.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net;
 using System.Text;
 using System.Threading;
@@ -23,14 +22,7 @@ namespace R3MUS.Devpack.ESI
 
         private void DoSingleSignOn(string url)
         {
-            Application.EnableVisualStyles();
-            try
-            {
-                Application.SetCompatibleTextRenderingDefault(false);
-            }
-            catch { }
-            var tokenForm = new TokenAccessForm(url);
-            Application.Run(tokenForm);
+            Process.Start(url);
         }
 
         public async Task<string> Listen(string listenUrl)

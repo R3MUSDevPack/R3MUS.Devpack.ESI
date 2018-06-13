@@ -142,7 +142,7 @@
     <value>&amp;language=en-us</value>
   </data>
   <data name="BaseURI" xml:space="preserve">
-    <value>https://esi.tech.ccp.is/latest</value>
+    <value>https://esi.evetech.net/latest</value>
   </data>
   <data name="BaseURITail" xml:space="preserve">
     <value>datasource=tranquility</value>
@@ -239,5 +239,20 @@
   </data>
   <data name="CorporationHistory" xml:space="preserve">
     <value>corporationhistory</value>
+  </data>
+  <data name="CorporationIds" xml:space="preserve">
+    <value>corporation_ids</value>
+  </data>
+  <data name="Comma" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="Skills" xml:space="preserve">
+    <value>skills</value>
+  </data>
+  <data name="SkillQueue" xml:space="preserve">
+    <value>skillqueue</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>contacts</value>
   </data>
 </root>

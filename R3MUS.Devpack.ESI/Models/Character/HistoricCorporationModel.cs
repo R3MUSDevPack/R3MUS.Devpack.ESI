@@ -10,7 +10,7 @@ namespace R3MUS.Devpack.ESI.Models.Character
     public class HistoricCorporationModel
     {
         [JsonProperty(PropertyName = "corporation_id")]
-        public int CorporationId { get; set; }
+        public int Id { get; set; }
         [JsonProperty(PropertyName = "record_id")]
         public int RecordId { get; set; }
         [JsonProperty(PropertyName = "start_date")]

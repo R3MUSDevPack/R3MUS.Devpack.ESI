@@ -142,7 +142,7 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://esi.tech.ccp.is/latest.
+        ///   Looks up a localized string similar to https://esi.evetech.net/latest.
         /// </summary>
         public static string BaseURI {
             get {
@@ -214,11 +214,29 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ,.
+        /// </summary>
+        public static string Comma {
+            get {
+                return ResourceManager.GetString("Comma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to constellations.
         /// </summary>
         public static string Constellations {
             get {
                 return ResourceManager.GetString("Constellations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to contacts.
+        /// </summary>
+        public static string Contacts {
+            get {
+                return ResourceManager.GetString("Contacts", resourceCulture);
             }
         }
         
@@ -237,6 +255,15 @@ namespace R3MUS.Devpack.ESI {
         public static string CorporationHistory {
             get {
                 return ResourceManager.GetString("CorporationHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to corporation_ids.
+        /// </summary>
+        public static string CorporationIds {
+            get {
+                return ResourceManager.GetString("CorporationIds", resourceCulture);
             }
         }
         
@@ -354,6 +381,24 @@ namespace R3MUS.Devpack.ESI {
         public static string Search {
             get {
                 return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to skillqueue.
+        /// </summary>
+        public static string SkillQueue {
+            get {
+                return ResourceManager.GetString("SkillQueue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to skills.
+        /// </summary>
+        public static string Skills {
+            get {
+                return ResourceManager.GetString("Skills", resourceCulture);
             }
         }
         

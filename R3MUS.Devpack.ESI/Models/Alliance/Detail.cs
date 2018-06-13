@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using R3MUS.Devpack.Core.Attributes;
 using R3MUS.Devpack.ESI.Extensions;
 using R3MUS.Devpack.ESI.Models.Shared;
 using System;
@@ -15,7 +16,7 @@ namespace R3MUS.Devpack.ESI.Models.Alliance
 
         public long Id { get; set; }
 
-        [JsonProperty(PropertyName = "alliance_name")]
+        [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
         [JsonProperty(PropertyName = "ticker")]

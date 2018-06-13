@@ -10,10 +10,10 @@ namespace R3MUS.Devpack.ESI.Models.Character
     public class ContactModel
     {
         [JsonProperty(PropertyName = "contact_id")]
-        public int ContactId { get; set; }
+        public long ContactId { get; set; }
         [JsonProperty(PropertyName = "contact_type")]
         public string ContactType { get; set; }
         [JsonProperty(PropertyName = "standing")]
-        public int Standing { get; set; }
+        public decimal Standing { get; set; }
     }
 }

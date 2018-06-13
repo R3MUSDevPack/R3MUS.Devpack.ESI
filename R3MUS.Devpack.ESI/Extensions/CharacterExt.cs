@@ -1,6 +1,8 @@
 ﻿using R3MUS.Devpack.Core;
 using R3MUS.Devpack.ESI.Models.Character;
+using R3MUS.Devpack.ESI.Models.Mail;
 using R3MUS.Devpack.ESI.Models.Shared;
+using R3MUS.Devpack.ESI.Models.Skills;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,7 +72,7 @@ namespace R3MUS.Devpack.ESI.Extensions
 
         public static IEnumerable<ContactModel> GetContacts(this Detail me, string authToken)
         {
-            var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.CorporationHistory);
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/?{4}", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.Contacts, Resources.BaseURI);
 
             var headers = new List<KeyValuePair<string, string>>();
             headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
@@ -99,6 +101,49 @@ namespace R3MUS.Devpack.ESI.Extensions
             var reqUri = string.Format("{0}/{1}/{2}/?{3}={4}&{5}", Resources.BaseURI, Resources.Characters, Resources.Names,
                 Resources.CharacterIds, idStr, Resources.BaseURITail);
             return new CharacterNames() { CharacterDetail = Web.BaseRequest(reqUri).Deserialize<Summary[]>() };
+        }
+
+        public static List<MailHeaderModel> GetMails(this Detail me, string authToken)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/?{4}", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.Mail, Resources.BaseURITail);
+
+            var headers = new List<KeyValuePair<string, string>>();
+            headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
+
+            var results = Web.BaseRequest(reqUri, headers).Deserialize<List<MailHeaderModel>>();
+            results.ForEach(item => item.OwnerId = me.Id);
+
+            return results;
+        }
+
+        public static MailDetailModel GetMail(this Detail me, long mailId, string authToken)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/{4}/?{5}", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.Mail, mailId.ToString(), Resources.BaseURITail);
+
+            var headers = new List<KeyValuePair<string, string>>();
+            headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
+
+            return Web.BaseRequest(reqUri, headers).Deserialize<MailDetailModel>();
+        }
+
+        public static SkillResponse GetTrainedSkills(this Detail me, string authToken)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/?{4}", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.Skills, Resources.BaseURITail);
+
+            var headers = new List<KeyValuePair<string, string>>();
+            headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
+
+            return Web.BaseRequest(reqUri, headers).Deserialize<SkillResponse>();
+        }
+
+        public static List<SkillQueueItem> GetTrainingQueue(this Detail me, string authToken)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/?{4}", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.SkillQueue, Resources.BaseURITail);
+
+            var headers = new List<KeyValuePair<string, string>>();
+            headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
+
+            return Web.BaseRequest(reqUri, headers).Deserialize<List<SkillQueueItem>>();
         }
     }
 }
