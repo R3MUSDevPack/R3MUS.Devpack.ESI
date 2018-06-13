@@ -125,6 +125,7 @@
     <Compile Include="Models\Shared\IHasLongId.cs" />
     <Compile Include="Models\Shared\RefreshTokenRequestModel.cs" />
     <Compile Include="Models\Shared\RefreshTokenResponseModel.cs" />
+    <Compile Include="Models\Shared\SearchResponse.cs" />
     <Compile Include="Models\Skills\SkillQueueItem.cs" />
     <Compile Include="Models\Skills\SkillResponse.cs" />
     <Compile Include="Models\Universe\Constellation.cs" />

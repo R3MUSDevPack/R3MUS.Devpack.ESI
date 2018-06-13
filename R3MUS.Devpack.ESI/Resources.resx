@@ -255,4 +255,10 @@
   <data name="Contacts" xml:space="preserve">
     <value>contacts</value>
   </data>
+  <data name="Categories" xml:space="preserve">
+    <value>categories</value>
+  </data>
+  <data name="Corporation" xml:space="preserve">
+    <value>corporation</value>
+  </data>
 </root>

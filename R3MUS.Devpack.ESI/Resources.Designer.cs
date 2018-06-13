@@ -169,6 +169,15 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to categories.
+        /// </summary>
+        public static string Categories {
+            get {
+                return ResourceManager.GetString("Categories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to character_ids.
         /// </summary>
         public static string CharacterIds {
@@ -246,6 +255,15 @@ namespace R3MUS.Devpack.ESI {
         public static string Contracts {
             get {
                 return ResourceManager.GetString("Contracts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to corporation.
+        /// </summary>
+        public static string Corporation {
+            get {
+                return ResourceManager.GetString("Corporation", resourceCulture);
             }
         }
         
