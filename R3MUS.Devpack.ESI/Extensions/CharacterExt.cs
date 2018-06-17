@@ -1,8 +1,10 @@
 ﻿using R3MUS.Devpack.Core;
+using R3MUS.Devpack.ESI.Models;
 using R3MUS.Devpack.ESI.Models.Character;
 using R3MUS.Devpack.ESI.Models.Mail;
 using R3MUS.Devpack.ESI.Models.Shared;
 using R3MUS.Devpack.ESI.Models.Skills;
+using R3MUS.Devpack.ESI.Models.Wallet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,7 +48,7 @@ namespace R3MUS.Devpack.ESI.Extensions
 
         public static CorporationRolesModel GetRolesInCorporation(this Detail me, string authToken)
         {
-            var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.Blueprints);
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.Roles);
 
             var headers = new List<KeyValuePair<string, string>>();
             headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
@@ -144,6 +146,25 @@ namespace R3MUS.Devpack.ESI.Extensions
             headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
 
             return Web.BaseRequest(reqUri, headers).Deserialize<List<SkillQueueItem>>();
+        }
+
+        public static List<WalletJournalEntry> GetWalletJournal(this Detail me, string authToken)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/{4}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.Wallet, Resources.Journal);
+
+            var headers = new List<KeyValuePair<string, string>>();
+            headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
+
+            return Web.BaseRequest(reqUri, headers).Deserialize<List<WalletJournalEntry>>();
+        }
+        public static List<WalletTransactionEntry> GetWalletTransactions(this Detail me, string authToken)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/{4}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.Wallet, Resources.Transactions);
+
+            var headers = new List<KeyValuePair<string, string>>();
+            headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
+
+            return Web.BaseRequest(reqUri, headers).Deserialize<List<WalletTransactionEntry>>();
         }
     }
 }

@@ -95,3 +95,7 @@ C:\Users\Chris\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\
 C:\Users\Chris\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.WebPages.xml
 C:\Users\Chris\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\Microsoft.Web.Infrastructure.xml
 C:\Users\Chris\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\AutoMapper.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\Ninject.dll
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\AutoMapper.xml
+C:\Users\Clyde\Source\Repos\R3MUS.Devpack.ESI\R3MUS.Devpack.ESI.Tests\bin\Debug\Ninject.xml

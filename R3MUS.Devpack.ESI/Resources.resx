@@ -261,4 +261,16 @@
   <data name="Corporation" xml:space="preserve">
     <value>corporation</value>
   </data>
+  <data name="Roles" xml:space="preserve">
+    <value>roles</value>
+  </data>
+  <data name="Journal" xml:space="preserve">
+    <value>journal</value>
+  </data>
+  <data name="Transactions" xml:space="preserve">
+    <value>transactions</value>
+  </data>
+  <data name="Wallet" xml:space="preserve">
+    <value>wallet</value>
+  </data>
 </root>

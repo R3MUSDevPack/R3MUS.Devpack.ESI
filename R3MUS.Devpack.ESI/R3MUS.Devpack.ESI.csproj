@@ -139,6 +139,8 @@
     <Compile Include="Models\Universe\Structure.cs" />
     <Compile Include="Models\Verification\Summary.cs" />
     <Compile Include="Models\Verification\TokenResponse.cs" />
+    <Compile Include="Models\Wallet\WalletJournalEntry.cs" />
+    <Compile Include="Models\Wallet\WalletTransactionEntry.cs" />
     <Compile Include="Models\Wars\Aggressor.cs" />
     <Compile Include="Models\Wars\Defender.cs" />
     <Compile Include="Models\Wars\War.cs" />
