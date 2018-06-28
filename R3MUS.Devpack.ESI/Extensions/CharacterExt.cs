@@ -1,6 +1,7 @@
 ﻿using R3MUS.Devpack.Core;
 using R3MUS.Devpack.ESI.Models;
 using R3MUS.Devpack.ESI.Models.Character;
+using R3MUS.Devpack.ESI.Models.Clones;
 using R3MUS.Devpack.ESI.Models.Mail;
 using R3MUS.Devpack.ESI.Models.Shared;
 using R3MUS.Devpack.ESI.Models.Skills;
@@ -99,10 +100,24 @@ namespace R3MUS.Devpack.ESI.Extensions
 
         public static CharacterNames GetCharacterNames(this IdList me)
         {
-            var idStr = WebUtility.UrlEncode(string.Join(",", me.Ids));
-            var reqUri = string.Format("{0}/{1}/{2}/?{3}={4}&{5}", Resources.BaseURI, Resources.Characters, Resources.Names,
-                Resources.CharacterIds, idStr, Resources.BaseURITail);
-            return new CharacterNames() { CharacterDetail = Web.BaseRequest(reqUri).Deserialize<Summary[]>() };
+            var toonNames = new CharacterNames()
+            {
+                CharacterDetail = new List<Summary>()
+            };
+
+            me.Ids.ForEach(id => {
+                try
+                {
+                    var characterDetail = new Detail(id);
+                    toonNames.CharacterDetail.Add(new Summary() { Id = id, Name = characterDetail.Name, CorporationId = characterDetail.CorporationId });
+                }
+                catch (Exception ex)
+                {
+                    toonNames.CharacterDetail.Add(new Summary() { Id = id, Name = "Character Not Found" });
+                }
+            });
+
+            return toonNames;
         }
 
         public static List<MailHeaderModel> GetMails(this Detail me, string authToken)
@@ -165,6 +180,16 @@ namespace R3MUS.Devpack.ESI.Extensions
             headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
 
             return Web.BaseRequest(reqUri, headers).Deserialize<List<WalletTransactionEntry>>();
+        }
+
+        public static CloneData GetCloneInformation(this Detail me, string authToken)
+        {
+            var reqUri = string.Format("{0}/{1}/{2}/{3}/", Resources.BaseURI, Resources.Characters, me.Id.ToString(), Resources.Clones);
+
+            var headers = new List<KeyValuePair<string, string>>();
+            headers.Add(new KeyValuePair<string, string>(Resources.Authorization, string.Concat("Bearer ", authToken)));
+
+            return Web.BaseRequest(reqUri, headers).Deserialize<CloneData>();
         }
     }
 }

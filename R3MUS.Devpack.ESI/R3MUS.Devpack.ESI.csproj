@@ -87,6 +87,7 @@
     <Compile Include="Infrastructure\ScopeBuilder.cs" />
     <Compile Include="Infrastructure\Scopes\Calendar.cs" />
     <Compile Include="Infrastructure\Scopes\Characters.cs" />
+    <Compile Include="Infrastructure\Scopes\Clones.cs" />
     <Compile Include="Infrastructure\Scopes\Contracts.cs" />
     <Compile Include="Infrastructure\Scopes\Corporation.cs" />
     <Compile Include="Infrastructure\Scopes\Killmails.cs" />
@@ -103,6 +104,7 @@
     <Compile Include="Models\Character\AgentsResearch.cs" />
     <Compile Include="Models\Character\CharacterNames.cs" />
     <Compile Include="Models\Character\ContactModel.cs" />
+    <Compile Include="Models\Clones\CloneData.cs" />
     <Compile Include="Models\Corporation\CorporationNames.cs" />
     <Compile Include="Models\Character\CorporationRolesModel.cs" />
     <Compile Include="Models\Character\HistoricCorporationModel.cs" />

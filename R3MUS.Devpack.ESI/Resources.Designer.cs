@@ -223,6 +223,15 @@ namespace R3MUS.Devpack.ESI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to clones.
+        /// </summary>
+        public static string Clones {
+            get {
+                return ResourceManager.GetString("Clones", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ,.
         /// </summary>
         public static string Comma {

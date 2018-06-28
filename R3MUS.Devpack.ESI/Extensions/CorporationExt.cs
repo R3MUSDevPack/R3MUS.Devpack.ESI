@@ -2,9 +2,11 @@
 using R3MUS.Devpack.ESI.Models;
 using R3MUS.Devpack.ESI.Models.Corporation;
 using R3MUS.Devpack.ESI.Models.Shared;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 
 namespace R3MUS.Devpack.ESI.Extensions
 {
@@ -39,10 +41,24 @@ namespace R3MUS.Devpack.ESI.Extensions
 
         public static CorporationNames GetCorporationNames(this IdList me)
         {
-            var idStr = WebUtility.UrlEncode(string.Join(",", me.Ids));                        
-            var reqUri = string.Format("{0}/{1}/{2}/?{3}={4}&{5}", Resources.BaseURI, Resources.Corporations, Resources.Names,
-                Resources.CorporationIds, idStr, Resources.BaseURITail);
-            return new CorporationNames() { CorporationDetail = Web.BaseRequest(reqUri).Deserialize<Summary[]>() };
+            var corpNames = new CorporationNames()
+            {
+                CorporationDetail = new List<Summary>()
+            };
+
+            me.Ids.ForEach(id => {
+                try
+                {                    
+                    var corpDetail = new Detail(id);
+                    corpNames.CorporationDetail.Add(new Summary() { Id = id, Name = corpDetail.Name });
+                }
+                catch (Exception ex)
+                {
+                    corpNames.CorporationDetail.Add(new Summary() { Id = id, Name = "Character Not Found" });
+                }
+            });
+
+            return corpNames;
         }
 
         public static Summary GetCorporationDetailsByName(this string me)

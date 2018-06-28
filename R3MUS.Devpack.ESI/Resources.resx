@@ -273,4 +273,7 @@
   <data name="Wallet" xml:space="preserve">
     <value>wallet</value>
   </data>
+  <data name="Clones" xml:space="preserve">
+    <value>clones</value>
+  </data>
 </root>
